@@ -105,24 +105,15 @@ async function playInterval(interval) {
   const note2 = notes[startIndex + interval.semitones];
 
   if (style === "harmonic") {
+    // Play both notes at the same time
     const audio1 = new Audio(`audio/${note1}.mp3`);
     const audio2 = new Audio(`audio/${note2}.mp3`);
 
     audio1.play();
-    setTimeout(() => {
     audio2.play();
-}, 40);
 
-await wait(1000);
+    await wait(1000); // give it time to finish
 
-    // Play both notes at the same time
-    // const audio1 = new Audio(`audio/${note1}.mp3`);
-    // const audio2 = new Audio(`audio/${note2}.mp3`);
-
-    // audio1.play();
-    // audio2.play();
-
-    // await wait(1000); // give it time to finish
     
   } else {
     // melodic
