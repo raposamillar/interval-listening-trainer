@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Interval Trainer</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Interval Trainer</h1>
+
+    <div class="controls">
+      <button id="playBtn">Play Interval</button>
+      <button id="checkBtn" disabled>Check Answer</button>
+      <button id="nextBtn" disabled>Next</button>
+      <button id="resetBtn" class="hidden">Reset</button>
+    </div>
+
+    <div class="status">
+      <p id="message">Press Play to start.</p>
+      <p id="score">Score: 0 / 0 (0%)</p>
+      <p id="cycle">Progress: 0 / 14</p>
+    </div>
+
+    <div class="answers" id="answers"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
